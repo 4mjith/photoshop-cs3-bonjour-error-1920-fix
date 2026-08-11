@@ -7,7 +7,7 @@
 ## The setup
 
 - Windows 10 (build 19045.x)
-- Adobe Photoshop CS3 (10.0), installed since 2007, working fine until one Friday
+- Adobe Photoshop CS3 (10.0), installed since 2022, working fine until one Friday
 - No manual changes made to the system beforehand
 
 ## Symptom 1: Photoshop CS3 suddenly stopped launching
