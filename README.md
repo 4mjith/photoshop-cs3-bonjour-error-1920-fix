@@ -110,4 +110,15 @@ If you're dealing with **any** software that bundles Bonjour/mDNSResponder (this
 
 ---
 
+## TL;DR Steps (if you just want the checklist)
+ 
+1. **Check the app crash log** — go through it line by line, don't skim.
+2. **Look for `mDNSResponder.exe`** in the faulting module / dependency list. If it's in there, you're likely looking at a Bonjour conflict, not a Photoshop or Windows corruption issue.
+3. **Check the Bonjour service status** (`services.msc` or `sc query "Bonjour Service"`). If it exists but won't start, that's your next clue.
+4. **Do a global search on your PC for `mDNSResponder.exe`.** If it turns up in more than one location, check each path — one of them is your real culprit, running software that has nothing to do with Adobe or Bonjour.
+5. **Identify the software behind the extra copy** (in my case, Nikon's wireless transfer utility) and **uninstall it.** Don't touch registry entries or delete DLLs manually — just remove the conflicting app.
+6. **Reinstall Photoshop CS3.**
+7. 💥 **Boom. It's installed.**
+
+
 *Posting this in case it saves someone else the same multi-day rabbit hole.*
